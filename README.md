@@ -19,7 +19,17 @@
  - Changing the binning of classification_counts to 1250 vs 1000. Also changing the binning of application_counts to 700 from 500.
  - Removing status and special considerations in the analysis but it resulted in a lower accuracy score.
  - Checked if there were any NaN within the dataset, but none were found.
+ - Tried using tanh activation for hidden node layers instead of relu.
  - Tried Adamax and Adagrad optimizers and both have resulted in a lower accuracy score compared to Adam.
+ - Original Attempt
+ - ![image](https://user-images.githubusercontent.com/107594143/198409272-dc2f7b29-ff86-47bc-b19c-4f4f2eb57cab.png)
+ - Attempt 1
+ - ![image](https://user-images.githubusercontent.com/107594143/198408820-56b0f127-8b04-4859-8390-f712752c30ce.png)
+  - Attempt 2
+  - ![image](https://user-images.githubusercontent.com/107594143/198408902-f94013fa-5e94-481b-9469-a28862eab157.png)
+  - Attempt 3
+  - ![image](https://user-images.githubusercontent.com/107594143/198408937-1b897cc1-3adc-4016-81ff-2d2ce61effc1.png)
+ 
 ## Summary
  - The purpose of this analysis is to use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
  - In the first attempt, we achieved an accuracy score of 0.646. To optimizie the accuracy score, I added a third and fourth hidden layer, changed the binning of application_counts to 700 from 500, I tried removing status and special considerations in the analysis but it resulted in a lower accuracy score, removing other columns but that also resulted in lower accuracy score, and I’ve also tried Adamax and Adagrad optimizers and both have resulted in a lower accuracy score compared to Adam.
